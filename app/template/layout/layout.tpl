@@ -32,7 +32,7 @@
         {%/block%}
 
         {%block name="footer"%}
-            {%include file="widget/footer.tpl"%}
+            {%include file="widget/community/footer.tpl"%}
         {%/block%}
         
         {%block name="js"%}{%/block%}

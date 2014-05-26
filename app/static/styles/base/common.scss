@@ -1,9 +1,11 @@
 @import 'reset';
 
 @import '../widget/footer';
+@import '../widget/icons';
 
 body{
 	background:#faf9f5;
+	line-height: 1.2;
 }
 
 .clearfix:after{

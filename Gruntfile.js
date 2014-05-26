@@ -49,6 +49,9 @@ module.exports = function (grunt) {
                 imagesDir: '<%= config.app %>/static/images',
                 javascriptsDir: '<%= config.app %>/static/scripts',
                 fontsDir: '<%= config.app %>/static/styles/fonts',
+                httpImagesPath: '/static/<%= config.module %>/images',
+                httpGeneratedImagesPath: '/static/<%= config.module %>/images/generated',
+                httpFontsPath: '/static/<%= config.module %>/styles/fonts',
                 noLineComments: true,
                 relativeAssets: false,
                 assetCacheBuster: false
@@ -198,7 +201,7 @@ module.exports = function (grunt) {
                     expand: true,
                     dot: true,
                     cwd: '<%= config.app %>/template',
-                    dest: '<%= config.dist %>/template/<%= config.module %>',
+                    dest: '<%= config.dist %>/template',
                     src: [
                         '**/*.{html,tpl}'
                     ]
