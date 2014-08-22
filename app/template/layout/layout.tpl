@@ -28,8 +28,10 @@
             
         {%/block%}
 
-        {%block name="content"%}
-        {%/block%}
+        <div id="content-wrap">
+            {%block name="content"%}
+            {%/block%}
+        </div>
 
         {%block name="footer"%}
             {%include file="widget/community/footer.tpl"%}

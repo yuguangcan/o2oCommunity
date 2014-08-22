@@ -1,8 +1,12 @@
 {%*通用底部*%}
-<footer class="common-footer">
+<footer class="common-footer" id="footer">
     <ul>
         <li>
             <a href="/shop/home">首页</a>
+        </li>
+        <li>|</li>
+        <li>
+            <a href="/shop/home">帮助</a>
         </li>
         <li>|</li>
         <li>

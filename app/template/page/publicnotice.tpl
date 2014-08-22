@@ -13,7 +13,7 @@
 {%/block%}
 
 {%block name="header"%}
-	{%include file="widget/community/footer.tpl" headertitle="物业公告"%}
+	{%include file="widget/community/header.tpl" headertitle="物业公告"%}
 {%/block%}
 
 
@@ -23,7 +23,7 @@
 		<i class="icon-"></i>
 		<p>尊敬的业主，我们要停水了，请小心</p>
 		<p class="sign">物业公司</p>
-		<p>2014-8-1</p>
+		<p class="sign">2014-8-1</p>
 	</section>
 
 {%/block%}

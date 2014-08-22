@@ -9,6 +9,6 @@
 
 
 cp -r dist/static/*  /Users/yuguangcan/webserver/php/static
-cp -r dist/template/layout/*  /Users/yuguangcan/webserver/php/CodeIgniter_2.2.0/templates/layout/community/
-cp -r dist/template/page/*  /Users/yuguangcan/webserver/php/CodeIgniter_2.2.0/templates/page/community/
-cp -r dist/template/widget/*  /Users/yuguangcan/webserver/php/CodeIgniter_2.2.0/templates/widget/community/
+cp -r dist/template/layout/*  /Users/yuguangcan/webserver/php/community/templates/layout/community/
+cp -r dist/template/page/*  /Users/yuguangcan/webserver/php/community/templates/page/community/
+cp -r dist/template/widget/*  /Users/yuguangcan/webserver/php/community/templates/widget/community/

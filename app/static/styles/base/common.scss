@@ -4,9 +4,15 @@
 @import '../widget/footer';
 @import '../widget/icons';
 
+html{
+	width: 100%;
+	height: 100%;
+}
 body{
 	background:#faf9f5;
-	line-height: 1.2;
+	line-height: 1.4;
+	position: relative;
+	min-height: 100%;
 }
 
 .clearfix:after{
@@ -19,7 +25,6 @@ body{
 html,a,input,textarea,.notapcolor{
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
-
 .hide{
 	display: none;
 }
@@ -28,6 +33,63 @@ html,a,input,textarea,.notapcolor{
 	text-align: center;
 	color: #61cba0;
 }
+#header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+#content-wrap{
+	position: relative;
+	padding: 44px 0 76px;
+}
+#footer{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
 .m-box{
-
+	margin: 10px;
+	padding: 12px;
+	border: 1px solid #eaeaea;
+	-webkit-border-radius:4px;
+	border-radius: 4px;
+	background: #fff;
+	h3{
+		color: #333;
+		font-size: 16px;
+		height: 18px;
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
+	p{
+		color: #999;
+		font-size: 14px;
+		&.sign{
+			text-align: right;
+		}
+	}
+}
+.m-nav{
+	line-height: 38px;
+	background: #fff;
+	border-bottom: 1px solid #d2d2d2;
+	width: 100%;
+	overflow: hidden;
+	overflow-x:scroll;
+	-webkit-overflow-scrolling:touch;
+	ul{
+		text-align: center;
+		white-space: nowrap;
+		li{
+			display: inline-block;
+			color: #60c2ef;
+			font-size: 16px;
+			margin: 0 14px;
+			border-bottom: 4px solid #fff;
+			&.on{
+				border-bottom: 4px solid #60c2ef;
+			}
+		}
+	}
 }
