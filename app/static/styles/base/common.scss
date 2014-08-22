@@ -1,5 +1,6 @@
 @import 'reset';
 
+@import '../widget/header';
 @import '../widget/footer';
 @import '../widget/icons';
 
@@ -27,4 +28,6 @@ html,a,input,textarea,.notapcolor{
 	text-align: center;
 	color: #61cba0;
 }
+.m-box{
 
+}

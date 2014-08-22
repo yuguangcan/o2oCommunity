@@ -40,7 +40,16 @@ requirejs.config({
                 'zepto',
                 'zepto-module'
             ]
+        },
+        {
+            name: 'page/pay',
+            exclude: [
+                'requirelib',
+                'zepto',
+                'zepto-module'
+            ]
         }
+
 
 
     ]
