@@ -26,6 +26,21 @@ require(['zepto','swipe'], function( $ ,Swipe ) {
 		if(document.getElementById('slider-position')){
 	        var bullets = document.getElementById('slider-position').getElementsByTagName('li');
 	    }
+
+	    var quickList = $('.quick-wrapper'),
+			quickcontentList = $('.quick-content li');
+		quickList.click(function(){
+			var item = $(this);
+			if(item.hasClass('on')){
+				return;
+			}
+			var index = $.inArray(item.get(0),quickList),
+				selectContent = quickcontentList.eq(index);
+			quickList.filter('.on').removeClass('on');
+			item.addClass('on');
+			quickcontentList.filter('.on').removeClass('on');
+			selectContent.addClass('on')
+		});
 		
 	});
 });
