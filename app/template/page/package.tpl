@@ -3,7 +3,7 @@
 {%extends file="community/layout/layout.tpl"%} 
 
 {%block name="title"%}
-物业公告
+包裹代收
 {%/block%}
 
 {%block name="css"%}

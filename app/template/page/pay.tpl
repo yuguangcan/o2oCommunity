@@ -3,7 +3,7 @@
 {%extends file="community/layout/layout.tpl"%} 
 
 {%block name="title"%}
-物业公告
+物业缴费
 {%/block%}
 
 {%block name="css"%}
