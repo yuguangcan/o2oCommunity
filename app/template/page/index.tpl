@@ -1,6 +1,6 @@
 {%*首页*%}
 
-{%extends file="layout/community/layout.tpl"%} 
+{%extends file="community/layout/layout.tpl"%} 
 
 {%block name="title"%}
 首页

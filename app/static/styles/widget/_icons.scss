@@ -30,5 +30,9 @@ $icon-retina: sprite-map("icons/*.png");
 	@include retina-sprite-background(textlogo,$icon-retina);
 	display: inline-block;
 }
+.icon-arrow-left{
+ 	@include retina-sprite-background(arrow-left,$icon-retina);
+	display: inline-block;
+}
 
 

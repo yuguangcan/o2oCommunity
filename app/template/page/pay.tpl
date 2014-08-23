@@ -1,6 +1,6 @@
 {%*首页*%}
 
-{%extends file="layout/community/layout.tpl"%} 
+{%extends file="community/layout/layout.tpl"%} 
 
 {%block name="title"%}
 物业公告
@@ -13,7 +13,7 @@
 {%/block%}
 
 {%block name="header"%}
-	{%include file="widget/community/header.tpl" headertitle="物业缴费"%}
+	{%include file="community/widget/header.tpl" headertitle="物业缴费"%}
 {%/block%}
 
 

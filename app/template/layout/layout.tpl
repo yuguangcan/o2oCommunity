@@ -34,7 +34,7 @@
         </div>
 
         {%block name="footer"%}
-            {%include file="widget/community/footer.tpl"%}
+            {%include file="community/widget/footer.tpl"%}
         {%/block%}
         
         {%block name="js"%}{%/block%}
