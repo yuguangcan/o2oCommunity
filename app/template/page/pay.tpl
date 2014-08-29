@@ -39,7 +39,7 @@
 				<div class="pay-info">
 					<span>单价1.8元/m<sup>2</sup></span>
 					<span>总价<b>128元</b></span>
-					<a href="javascript:;">缴费</a>
+					<a href="javascript:;" class="m-submit">缴费</a>
 				</div>
 			</li>
 			<li>
@@ -52,7 +52,7 @@
 				<div class="pay-info">
 					<span>单价1.8元/m<sup>2</sup></span>
 					<span>总价<b>128元</b></span>
-					<a href="javascript:;">缴费</a>
+					<a href="javascript:;" class="m-submit">缴费</a>
 				</div>
 			</li>
 			<li>
@@ -65,7 +65,7 @@
 				<div class="pay-info">
 					<span>单价1.8元/m<sup>2</sup></span>
 					<span>总价<b>128元</b></span>
-					<a href="javascript:;">缴费</a>
+					<a href="javascript:;" class="m-submit">缴费</a>
 				</div>
 			</li>
 			<li>
@@ -78,7 +78,7 @@
 				<div class="pay-info">
 					<span>单价1.8元/m<sup>2</sup></span>
 					<span>总价<b>128元</b></span>
-					<a href="javascript:;">缴费</a>
+					<a href="javascript:;" class="m-submit">缴费</a>
 				</div>
 			</li>
 		</ul>

@@ -151,17 +151,17 @@
 			border-radius: 50px;
 			-webkit-box-shadow:0 2px 2px rgba(0,0,0,0.2);
 			box-shadow:0 2px 2px rgba(0,0,0,0.2);
-			&.fix{
-				background: #65c3ed;
+			&.shop{
+				background: #5ccc9f;
 			}
-			&.package{
-				background: #61cba0;
+			&.life{
+				background: #60c2ef;
 			}
-			&.call{
-				background: #f7ba5b;
+			&.award{
+				background: #ff9434;
 			}
-			&.pay{
-				background: #f28e74;
+			&.neighbour{
+				background: #f06a9b;
 			}
 		}
 		.quick-incon-text{
@@ -180,6 +180,18 @@
 			background: #5ccc9f;
 			-webkit-transform:rotate(45deg);
 			transform:rotate(45deg);
+			&.shop{
+				background: #5ccc9f;
+			}
+			&.life{
+				background: #60c2ef;
+			}
+			&.award{
+				background: #ff9434;
+			}
+			&.neighbour{
+				background: #f06a9b;
+			}
 		}
 		&.on{
 			.quick-arrow{
@@ -201,13 +213,26 @@
 			text-align: center;
 			border-spacing: 0;
 			border-collapse: separate;
+			-webkit-border-radius:5px;
+			border-radius: 5px;
+			&.shop{
+				background: #5ccc9f;
+			}
+			&.life{
+				background: #60c2ef;
+			}
+			&.award{
+				background: #ff9434;
+			}
+			&.neighbour{
+				background: #f06a9b;
+			}
 			tr{
 				height: 45px;
 				td{
 					border-right:1px solid #e8e8e8;
 					border-bottom: 1px solid #e8e8e8;
 					color: #fff;
-					background: #5ccc9f;
 					font-size: 14px;
 					a{
 						color: #fff;
@@ -215,30 +240,10 @@
 					&:last-child{
 						border-right:0;
 					}
-				}
-				&:first-child{
-					td{
-						&:first-child{
-							-webkit-border-top-left-radius:5px;
-							border-top-left-radius:5px;
-						}
-						&:last-child{
-							-webkit-border-top-right-radius:5px;
-							border-top-right-radius:5px;
-						}
-					}
-				}
+				}				
 				&:last-child{
 					td{
 						border-bottom: 0;
-						&:first-child{
-							-webkit-border-bottom-left-radius:5px;
-							border-bottom-left-radius:5px;
-						}
-						&:last-child{
-							-webkit-border-bottom-right-radius:5px;
-							border-bottom-right-radius:5px;
-						}
 					}
 				}
 			}

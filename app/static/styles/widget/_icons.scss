@@ -2,28 +2,8 @@
 
 $icon-retina: sprite-map("icons/*.png");
 
-.icon-arrow{
- 	@include retina-sprite-background(arrow,$icon-retina);
-	display: inline-block;
-}
-.icon-call{
-	@include retina-sprite-background(call,$icon-retina);
-	display: inline-block;
-}
-.icon-fix{
-	@include retina-sprite-background(fix,$icon-retina);
-	display: inline-block;
-}
 .icon-logo{
 	@include retina-sprite-background(logo,$icon-retina);
-	display: inline-block;
-}
-.icon-package{
-	@include retina-sprite-background(package,$icon-retina);
-	display: inline-block;
-}
-.icon-pay{
-	@include retina-sprite-background(pay,$icon-retina);
 	display: inline-block;
 }
 .icon-textlogo{
@@ -34,5 +14,24 @@ $icon-retina: sprite-map("icons/*.png");
  	@include retina-sprite-background(arrow-left,$icon-retina);
 	display: inline-block;
 }
+.icon-shop{
+	@include retina-sprite-background(shop,$icon-retina);
+	display: inline-block;
+}
+.icon-life{
+	@include retina-sprite-background(life,$icon-retina);
+	display: inline-block;
+}
+.icon-award{
+	@include retina-sprite-background(award,$icon-retina);
+	display: inline-block;
+}
+.icon-neighbour{
+	@include retina-sprite-background(neighbour,$icon-retina);
+	display: inline-block;
+}
+
+
+
 
 

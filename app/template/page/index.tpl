@@ -87,38 +87,38 @@
 
 	<section class="quick">
 		<div class="quick-wrapper on">
-			<div class="quick-icon-wrapper pay">
-				<i class="icon-pay"></i>
+			<div class="quick-icon-wrapper shop">
+				<i class="icon-shop"></i>
 			</div>
 			<p class="quick-incon-text">社区超市</p>
-			<span class="quick-arrow"></span>
+			<span class="quick-arrow shop"></span>
 		</div>
 		<div class="quick-wrapper">
-			<div class="quick-icon-wrapper fix">
-				<i class="icon-fix"></i>				
+			<div class="quick-icon-wrapper life">
+				<i class="icon-life"></i>				
 			</div>
 			<p class="quick-incon-text">社区生活</p>
-			<span class="quick-arrow"></span>
+			<span class="quick-arrow life"></span>
 		</div>
 		<div class="quick-wrapper">
-			<div class="quick-icon-wrapper package">
-				<i class="icon-package"></i>
+			<div class="quick-icon-wrapper award">
+				<i class="icon-award"></i>
 			</div>
 			<p class="quick-incon-text">每日抽奖</p>
-			<span class="quick-arrow"></span>
+			<span class="quick-arrow award"></span>
 		</div>
 		<div class="quick-wrapper">
-			<div class="quick-icon-wrapper call">
-				<i class="icon-call"></i>				
+			<div class="quick-icon-wrapper neighbour">
+				<i class="icon-neighbour"></i>				
 			</div>
 			<p class="quick-incon-text">我的邻居</p>
-			<span class="quick-arrow"></span>
+			<span class="quick-arrow neighbour"></span>
 		</div>
 	</section>
 
 	<ul class="quick-content">
 		<li class="on">
-			<table>
+			<table class="shop">
 				<tr>
 					<td>
 						<a href="/">食品</a>
@@ -154,7 +154,7 @@
 			</table>
 		</li>
 		<li>
-			<table>
+			<table class="life">
 				<tr>
 					<td>
 						<a href="/">食品</a>
@@ -190,7 +190,7 @@
 			</table>
 		</li>
 		<li>
-			<table>
+			<table class="award">
 				<tr>
 					<td>
 						<a href="/">食品</a>
@@ -226,7 +226,7 @@
 			</table>
 		</li>
 		<li>
-			<table>
+			<table class="neighbour">
 				<tr>
 					<td>
 						<a href="/">食品</a>
