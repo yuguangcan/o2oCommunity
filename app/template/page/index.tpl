@@ -27,24 +27,18 @@
 	<section class="public">
 		<div id='public-slider' class='swipe'>
 	        <ul class="public-list swipe-wrap">
-	            <li>
-	            	<a href="/">
-	            		<div class="title">物业公告</div>
-	            		<p class="info">尊敬的业主：小区B座将于明天下午11：00-18：00暂停供水，给您带来不便请见谅</p>
-	            	</a>
-	            </li>
-	            <li>
-	            	<a href="/">
-	            		<div class="title">物业公告二</div>
-	            		<p class="info">尊敬的业主：小区B座将于明天下午11：00-18：00暂停供水，给您带来不便请见谅</p>
-	            	</a>
-	            </li>
-	            <li>
-	            	<a href="/">
-	            		<div class="title">物业公告三</div>
-	            		<p class="info">尊敬的业主：小区B座将于明天下午11：00-18：00暂停供水，给您带来不便请见谅</p>
-	            	</a>
-	            </li>
+	        	{%$i=1%}
+                {%foreach from=$data.announce item=foo%}
+                    {%if $i < 4%}
+                    <li>
+                    	<a href="/community/announce/uannounce">
+                        	<div class="title">{%$foo.title%}</div>
+                        	<p class="info">{%$foo.content%}</p>
+                       	</a>
+                   	</li>
+                   {%/if%}
+                   {%$i=$i+1%}
+                {%/foreach%}
 	        </ul>
 	    </div>
 	    <ul id="slider-position" class="public-list-pointer">

@@ -8,6 +8,7 @@ requirejs.config({
         'requirelib': '../../bower_components/requirejs/require',
         'zepto': '../../bower_components/zepto/zepto',
         'swipe': '../../bower_components/swipe/swipe',
+        'baiduTemplate': 'base/baiduTemplate',
         'zepto-module': 'base/zepto-modules'
     },
 
@@ -17,8 +18,10 @@ requirejs.config({
         },
         'swipe':{
             exports: 'Swipe'
+        },
+        'baiduTemplate': {
+            exports: 'baidu.template'
         }
-        
         
     },
 
@@ -48,7 +51,24 @@ requirejs.config({
                 'zepto',
                 'zepto-module'
             ]
+        },
+        {
+            name: 'page/visitor',
+            exclude: [
+                'requirelib',
+                'zepto',
+                'zepto-module'
+            ]
+        },
+        {
+            name: 'page/publicnotice',
+            exclude: [
+                'requirelib',
+                'zepto',
+                'zepto-module'
+            ]
         }
+
 
 
 

@@ -1,0 +1,4 @@
+require(['zepto'], function( $ ) {
+	$(function(){
+	});
+});

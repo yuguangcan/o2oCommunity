@@ -20,71 +20,38 @@
 {%block name="content"%}
 	<nav class="m-nav">
 		<ul>
-			<li class="on">物业费</li>
-			<li>水费</li>
-			<li>电费</li>
-			<li>暖气费</li>
+			{%foreach $data.type_list as $item%}
+			<li data-type="{%$item.type_id%}">{%$item.type_name%}</li>
+			{%/foreach%}
 		</ul>
 	</nav>
 
-	<section>
-		<ul class="pay-content">
-			<li class="on">
-				<div class="m-box">
-					<h3>尊敬的业主1</h3>
-					<p>您的房子要交费了，请关注</p>
-					<p class="sign">物业公司</p>
-					<p class="sign">2014-8-1</p>
-				</div>
-				<div class="pay-info">
-					<span>单价1.8元/m<sup>2</sup></span>
-					<span>总价<b>128元</b></span>
-					<a href="javascript:;" class="m-submit">缴费</a>
-				</div>
-			</li>
-			<li>
-				<div class="m-box">
-					<h3>尊敬的业主2</h3>
-					<p>您的房子要交费了，请关注</p>
-					<p class="sign">物业公司</p>
-					<p class="sign">2014-8-1</p>
-				</div>
-				<div class="pay-info">
-					<span>单价1.8元/m<sup>2</sup></span>
-					<span>总价<b>128元</b></span>
-					<a href="javascript:;" class="m-submit">缴费</a>
-				</div>
-			</li>
-			<li>
-				<div class="m-box">
-					<h3>尊敬的业主3</h3>
-					<p>您的房子要交费了，请关注</p>
-					<p class="sign">物业公司</p>
-					<p class="sign">2014-8-1</p>
-				</div>
-				<div class="pay-info">
-					<span>单价1.8元/m<sup>2</sup></span>
-					<span>总价<b>128元</b></span>
-					<a href="javascript:;" class="m-submit">缴费</a>
-				</div>
-			</li>
-			<li>
-				<div class="m-box">
-					<h3>尊敬的业主4</h3>
-					<p>您的房子要交费了，请关注</p>
-					<p class="sign">物业公司</p>
-					<p class="sign">2014-8-1</p>
-				</div>
-				<div class="pay-info">
-					<span>单价1.8元/m<sup>2</sup></span>
-					<span>总价<b>128元</b></span>
-					<a href="javascript:;" class="m-submit">缴费</a>
-				</div>
-			</li>
-		</ul>
+	<section class="pay-content">
 	</section>
+	<p class="m-loading">正在加载更多</p>
 {%/block%}
 
 {%block name="js"%}
+<script id="pay_template" type="text/html">
+
+	<% for(var i=0;i<list.length;i++){ %>
+	<div class="pay-wrapper">
+		<div class="m-box">
+			<h3><%=list[i].title%></h3>
+			<p><%=list[i].content%></p>
+		</div>
+		<div class="pay-info">
+			<% if(list[i].area){ %>
+			<span>单价<%=list[i].area%>元/m<sup>2</sup></span>
+			<% } %>
+			<span>总价<b><%=list[i].price%>元</b></span>
+			<!--
+			<a href="javascript:;" class="m-submit">缴费</a>
+			-->
+		</div>
+	</div>
+	<% } %>
+	
+</script>
 <script data-main="/static/community/scripts/page/pay" src="/static/community/scripts/require.js"></script>
 {%/block%}

@@ -28,10 +28,11 @@ html,a,input,textarea,.notapcolor{
 .hide{
 	display: none;
 }
-.load-more{
+.m-loading{
 	margin: 10px 0;
 	text-align: center;
-	color: #61cba0;
+	color: #65c3ed;
+	display: none;
 }
 #header{
 	position: absolute;
@@ -121,12 +122,53 @@ html,a,input,textarea,.notapcolor{
 	font-size: 14px;
 }
 .m-select{
-	font-size: 18px;
-	color: #61c1f1;
 	border-bottom: 1px solid #61c1f1;
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
+	position: relative;
+	.notice{
+		position: absolute;
+		font-size: 12px;
+		color: #d8d8d8;
+		left: 0;
+		z-index: 2;
+	}
+	.arrow{
+		position: absolute;
+		right: 0;
+		bottom: 1px;
+		width: 0;
+		height: 0;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent #61c1f1 #61c1f1 transparent;
+		z-index: 2;
+	}
+	select{
+		-webkit-appearance: none;
+		border: 0;
+		outline: none;
+		font-size: 18px;
+		color: #61c1f1;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	input{
+		-webkit-appearance:none;
+		text-align: center;
+		font-size: 18px;
+		color: #61c1f1;
+		background: transparent;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
 }
 .m-textarea{
 	textarea{

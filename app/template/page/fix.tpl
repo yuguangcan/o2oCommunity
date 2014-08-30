@@ -20,12 +20,17 @@
 {%block name="content"%}
 	<section class="submit">
 		<div class="m-select">
-			请选择保修项目
+			<span class="arrow"></span>
+			<select>
+				<option value="0">请选择保修项目</option>
+				<option value="2">2人</option>
+				<option value="3">3人</option>
+				<option value="4">4人</option>
+				<option value="5">5人</option>
+			</select>
 		</div>
 		<div class="m-textarea">
-			<textarea placeholder="备注（选填）">
-
-			</textarea>
+			<textarea placeholder="备注（选填）"></textarea>
 		</div>
 		<a href="javascript:;" class="m-submit">提交</a>
 	</section>

@@ -19,16 +19,24 @@
 
 {%block name="content"%}
 	<section class="submit">
-		<div class="m-select">
-			06月10日
+		<div class="m-select" id="date">
+			<span class="notice">时间</span>
+			<span class="arrow"></span>
+			<input type="date"></input>
 		</div>
-		<div class="m-select">
-			2人
+		<div class="m-select" id="count">
+			<span class="notice">人数</span>
+			<span class="arrow"></span>
+			<select>
+				<option value="1">1人</option>
+				<option value="2">2人</option>
+				<option value="3">3人</option>
+				<option value="4">4人</option>
+				<option value="5">5人</option>
+			</select>
 		</div>
 		<div class="m-textarea">
-			<textarea placeholder="备注（选填）">
-
-			</textarea>
+			<textarea placeholder="备注（选填）"></textarea>
 		</div>
 		<a href="javascript:;" class="m-submit">提交</a>
 	</section>
@@ -47,5 +55,5 @@
 {%/block%}
 
 {%block name="js"%}
-
+<script data-main="/static/community/scripts/page/visitor" src="/static/community/scripts/require.js"></script>
 {%/block%}

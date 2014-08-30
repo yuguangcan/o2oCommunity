@@ -18,16 +18,21 @@
 
 
 {%block name="content"%}
-	<section class="m-box">
-		<h3>停水通知</h3>
-		<i class="icon-"></i>
-		<p>尊敬的业主，我们要停水了，请小心</p>
-		<p class="sign">物业公司</p>
-		<p class="sign">2014-8-1</p>
-	</section>
-
+	<div class="public-list"></div>
+	<p class="m-loading">正在加载更多</p>
 {%/block%}
 
 {%block name="js"%}
-
+<script id="public_template" type="text/html">
+	<% for(var i=0;i<list.length;i++){ %>
+	<section class="m-box">
+		<h3><%=list[i].title%></h3>
+		<i class="icon-"></i>
+		<p><%=list[i].content%></p>
+		<p class="sign"><%=list[i].com_name%></p>
+		<p class="sign"><%=list[i].push_time%></p>
+	</section>
+	<% } %>
+</script>
+<script data-main="/static/community/scripts/page/publicnotice" src="/static/community/scripts/require.js"></script>
 {%/block%}

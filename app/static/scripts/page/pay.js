@@ -1,19 +1,27 @@
-require(['zepto'], function( $ ) {
+require(['zepto','widget/scrollLoad'], function( $ , scrollLoad) {
 	$(function(){
 		var navList = $('.m-nav li'),
-			contentList = $('.pay-content li');
+			contentList = $('.pay-content');
 		navList.click(function(){
 			var item = $(this);
 			if(item.hasClass('on')){
 				return;
 			}
-			var index = $.inArray(item.get(0),navList),
-				selectContent = contentList.eq(index);
+			var index = $.inArray(item.get(0),navList)
 			navList.filter('.on').removeClass('on');
 			item.addClass('on');
-			contentList.filter('.on').removeClass('on');
-			selectContent.addClass('on')
+
+			contentList.empty();
+			scrollLoad.reset();
+
+			new scrollLoad.init({
+	            container : contentList,
+	            loading: $('.m-loading'),
+	            template : 'pay_template',
+	            url : '/community/payment/list',
+	            data : 'type='+item.data('type')
+	        });
 		});
-		
+		navList.eq(0).trigger('click');
 	});
 });
