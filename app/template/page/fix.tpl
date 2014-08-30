@@ -3,7 +3,7 @@
 {%extends file="community/layout/layout.tpl"%} 
 
 {%block name="title"%}
-物业保修
+物业报修
 {%/block%}
 
 {%block name="css"%}
@@ -13,15 +13,15 @@
 {%/block%}
 
 {%block name="header"%}
-	{%include file="community/widget/header.tpl" headertitle="物业保修"%}
+	{%include file="community/widget/header.tpl" headertitle="物业报修"%}
 {%/block%}
 
 
 {%block name="content"%}
-	<section class="submit">
+	<section class="submit" id="submit">
 		<div class="m-select">
 			<span class="arrow"></span>
-			<select>
+			<select id="type">
 				<option value="0">请选择保修项目</option>
 				<option value="2">2人</option>
 				<option value="3">3人</option>
@@ -30,11 +30,11 @@
 			</select>
 		</div>
 		<div class="m-textarea">
-			<textarea placeholder="备注（选填）"></textarea>
+			<textarea placeholder="备注（选填）" id="other"></textarea>
 		</div>
-		<a href="javascript:;" class="m-submit">提交</a>
+		<a href="javascript:;" class="m-submit" id="submit-fix">提交</a>
 	</section>
-	<section class="result">
+	<section class="result" id="result">
 		<div class="m-result">
 			<h3>提交成功</h3>
 			<p>我们会在24小时内处理您的请求，请耐心等待</p>
@@ -48,5 +48,5 @@
 {%/block%}
 
 {%block name="js"%}
-
+<script data-main="/static/community/scripts/page/fix" src="/static/community/scripts/require.js"></script>
 {%/block%}

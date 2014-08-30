@@ -37,7 +37,11 @@
             {%include file="community/widget/footer.tpl"%}
         {%/block%}
         
-        {%block name="js"%}{%/block%}
+        {%block name="popup"%}
+        {%/block%}
+
+        {%block name="js"%}
+        {%/block%}
 
     </body>
 </html>

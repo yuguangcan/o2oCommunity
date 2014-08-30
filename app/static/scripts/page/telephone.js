@@ -25,6 +25,7 @@ require(['zepto'], function( $ ) {
 		});
 		$('.telephone-list li').click(function(){
 			popupContent.html($(this).html());
+			$('#popup-tel').get(0).href = 'tel:'+$(this).data('tel');
 			popup.show();
 		});
 	});

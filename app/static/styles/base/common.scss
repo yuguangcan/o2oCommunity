@@ -39,18 +39,18 @@ html,a,input,textarea,.notapcolor{
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 }
 #content-wrap{
 	position: relative;
 	padding: 44px 0 76px;
-	z-index: 2;
+	z-index: 1;
 }
 #footer{
 	position: absolute;
 	width: 100%;
 	bottom: 0;
-	z-index: 1;
+	z-index: 2;
 }
 .m-box{
 	margin: 10px;

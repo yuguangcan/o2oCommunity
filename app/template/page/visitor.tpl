@@ -18,36 +18,41 @@
 
 
 {%block name="content"%}
-	<section class="submit">
-		<div class="m-select" id="date">
+	<section class="submit" id="submit">
+		<div class="m-select">
 			<span class="notice">时间</span>
 			<span class="arrow"></span>
-			<input type="date"></input>
+			<input type="date" id="date"></input>
 		</div>
-		<div class="m-select" id="count">
+		<div class="m-select">
 			<span class="notice">人数</span>
 			<span class="arrow"></span>
-			<select>
+			<select id="count">
 				<option value="1">1人</option>
 				<option value="2">2人</option>
 				<option value="3">3人</option>
 				<option value="4">4人</option>
 				<option value="5">5人</option>
+				<option value="6">6人</option>
+				<option value="7">7人</option>
+				<option value="8">8人</option>
+				<option value="9">9人</option>
+				<option value="10">10人</option>
 			</select>
 		</div>
 		<div class="m-textarea">
-			<textarea placeholder="备注（选填）"></textarea>
+			<textarea placeholder="备注（选填）" id="other"></textarea>
 		</div>
-		<a href="javascript:;" class="m-submit">提交</a>
+		<a href="javascript:;" class="m-submit" id="submit-visitor">提交</a>
 	</section>
-	<section class="result">
+	<section class="result" id="result">
 		<div class="m-result">
 			<h3>提交成功</h3>
-			<p>你已经成功登记预约06月10日2人，请将以下验证码发送给访客</p>
-			<div class="code">1234</div>
+			<p>你已经成功登记预约<span id="result-date">06月10日</span><span id="result-count">2</span>人，请将以下验证码发送给访客</p>
+			<div class="code" id="result-code">1234</div>
 			<div class="opt clearfix">
 				<a href="/" class="m-cancel">返回首页</a>
-				<a href="tel:123" class="m-cancel">立即电话</a>
+				<a href="tel:123" class="m-submit">立即电话</a>
 			</div>
 		</div>
 		

@@ -67,7 +67,25 @@ requirejs.config({
                 'zepto',
                 'zepto-module'
             ]
+        },
+        {
+            name: 'page/package',
+            exclude: [
+                'requirelib',
+                'zepto',
+                'zepto-module'
+            ]
+        },
+        {
+            name: 'page/fix',
+            exclude: [
+                'requirelib',
+                'zepto',
+                'zepto-module'
+            ]
         }
+
+
 
 
 

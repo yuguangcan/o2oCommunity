@@ -31,7 +31,7 @@
                 {%foreach from=$data.announce item=foo%}
                     {%if $i < 4%}
                     <li>
-                    	<a href="/community/announce/uannounce">
+                    	<a href="/community/announce/listview">
                         	<div class="title">{%$foo.title%}</div>
                         	<p class="info">{%$foo.content%}</p>
                        	</a>
@@ -56,24 +56,24 @@
 			</tr>
 			<tr>
 				<td>
-					<a href="/">物业缴费</a>
+					<a href="/community/payment/listview">物业缴费</a>
 				</td>
 				<td>
-					<a href="/">包裹代收</a>
+					<a href="/community/package/package">包裹代收</a>
 				</td>
 				<td>
-					<a href="/">访客预约</a>
+					<a href="/community/visitor/visitor">访客预约</a>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/">物业保修</a>
+					<a href="/community/repair/listview">物业报修</a>
 				</td>
 				<td>
-					<a href="/">投诉建议</a>
+					<a href="/community/complain/listview">投诉建议</a>
 				</td>
 				<td>
-					<a href="/">更多</a>
+					<a href="/community/tel/listview">便民电话</a>
 				</td>
 			</tr>
 		</table>
@@ -115,32 +115,32 @@
 			<table class="shop">
 				<tr>
 					<td>
-						<a href="/">食品</a>
+						<a href="/shop/home">食品</a>
 					</td>
 					<td>
-						<a href="/">饮品</a>
+						<a href="/shop/home">饮品</a>
 					</td>
 					<td>
-						<a href="/">生活用品</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="/">新鲜水果</a>
-					</td>
-					<td>
-						<a href="/">永生鲜花</a>
-					</td>
-					<td>
-						<a href="/">母婴专区</a>
+						<a href="/shop/home">生活用品</a>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<a href="/">生鲜专区</a>
+						<a href="/shop/home">新鲜水果</a>
 					</td>
 					<td>
-						<a href="/">进口食品</a>
+						<a href="/shop/home">永生鲜花</a>
+					</td>
+					<td>
+						<a href="/shop/home">母婴专区</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="/shop/home">生鲜专区</a>
+					</td>
+					<td>
+						<a href="/shop/home">进口食品</a>
 					</td>
 					<td>
 					</td>

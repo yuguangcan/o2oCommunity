@@ -20,77 +20,38 @@
 {%block name="content"%}
 	<nav class="m-nav">
 		<ul>
-			<li class="on">紧急电话</li>
-			<li>小区办事</li>
-			<li>搬家开锁</li>
-			<li>社会公共</li>
+			{%foreach $data.type_list as $item%}
+			<li class="{%if $item@index eq 0%}on{%else%}{%/if%}">{%$item.type_name%}</li>
+			{%/foreach%}
 		</ul>
 	</nav>
 
 	<section>
 		<ul class="telephone-content">
-			<li class="on">
+			{%foreach $data.list as $itemlist%}
+			<li class="{%if $itemlist@index eq 0%}on{%else%}{%/if%}">
 				<ul class="telephone-list">
-					<li>
-						中关村派出所：08029298827
+					{%foreach $itemlist as $item%}
+					<li data-tel="{%$item.tel%}">
+						{%$item.title%}：{%$item.tel%}
 					</li>
-					<li>
-						物业客服：213222
-					</li>
-					<li>
-						中关村派出所：08029298827
-					</li>
+					{%/foreach%}
 				</ul>
 			</li>
-			<li>
-				<ul class="telephone-list">
-					<li>
-						中关村派出所：08029298827
-					</li>
-					<li>
-						物业客服：213222
-					</li>
-					<li>
-						中关村派出所：08029298827
-					</li>
-				</ul>
-			</li>
-			<li>
-				<ul class="telephone-list">
-					<li>
-						中关村派出所：08029298827
-					</li>
-					<li>
-						物业客服：213222
-					</li>
-					<li>
-						中关村派出所：08029298827
-					</li>
-				</ul>
-			</li>
-			<li>
-				<ul class="telephone-list">
-					<li>
-						中关村派出所：08029298827
-					</li>
-					<li>
-						物业客服：213222
-					</li>
-					<li>
-						中关村派出所：08029298827
-					</li>
-				</ul>
-			</li>
+			{%/foreach%}
 		</ul>
 	</section>
 
+{%/block%}
+
+{%block name="popup"%}
 	<div class="m-popup">
 		<div class="popup-overlay"></div>
 		<div class="popup-inner">
 			<div class="popup-content"></div>
 			<div class="popup-opt">
 				<a href="javascript:;" class="popup-cancel">取消</a>
-				<a href="tel:1234">呼叫</a>
+				<a href="tel:1234" id="popup-tel">呼叫</a>
 			</div>
 		</div>
 	</div>

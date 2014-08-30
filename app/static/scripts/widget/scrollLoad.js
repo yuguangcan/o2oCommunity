@@ -34,7 +34,7 @@ define(['zepto' ,'baiduTemplate'], function ($ , bt) {
 		$.get(loadurl, function(data) {
             
             if(data.data.hasMore){
-                pn++;
+                pn = pn + rn;
                 $(document).on('scroll', loadHandel);
                 loading.show();
             }else{

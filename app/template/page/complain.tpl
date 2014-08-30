@@ -18,17 +18,16 @@
 
 
 {%block name="content"%}
-	<section class="submit">
+	<section class="submit" id="submit">
 		<div class="m-textarea">
-			<textarea placeholder="输入您的投诉与建议">
-			</textarea>
+			<textarea placeholder="输入您的投诉与建议" id="other"></textarea>
 		</div>
 		<div class="operation clearfix">
 			<a href="javascript:;" class="m-cancel">电话</a>
-			<a href="javascript:;" class="m-submit">提交</a>
+			<a href="javascript:;" class="m-submit" id="submit-complain">提交</a>
 		</div>
 	</section>
-	<section class="result">
+	<section class="result" id="result">
 		<div class="m-result">
 			<h3>提交成功</h3>
 			<p>我们会在24小时内处理您的请求，请耐心等待</p>
@@ -42,5 +41,5 @@
 {%/block%}
 
 {%block name="js"%}
-
+<script data-main="/static/community/scripts/page/complain" src="/static/community/scripts/require.js"></script>
 {%/block%}
