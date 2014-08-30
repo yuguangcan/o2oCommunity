@@ -38,18 +38,18 @@ html,a,input,textarea,.notapcolor{
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 2;
+	z-index: 1;
 }
 #content-wrap{
 	position: relative;
 	padding: 44px 0 76px;
-	z-index: 1;
+	z-index: 2;
 }
 #footer{
 	position: absolute;
 	width: 100%;
 	bottom: 0;
-	z-index: 2;
+	z-index: 1;
 }
 .m-box{
 	margin: 10px;
@@ -101,6 +101,7 @@ html,a,input,textarea,.notapcolor{
 	color: #fff;
 	height: 40px;
 	line-height: 40px;
+	border:1px solid #ff9a00;
 	-webkit-border-radius:4px;
 	border-radius: 4px;
 	display: block;
@@ -112,6 +113,7 @@ html,a,input,textarea,.notapcolor{
 	color: #333;
 	height: 40px;
 	line-height: 40px;
+	border: 1px solid #e2e2e2;
 	-webkit-border-radius:4px;
 	border-radius: 4px;
 	display: block;
@@ -177,6 +179,56 @@ html,a,input,textarea,.notapcolor{
 			}
 			&:last-child{
 				float:right;
+			}
+		}
+	}
+}
+.m-popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	.popup-overlay{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left:0;
+		top: 0;
+		z-index: 1;
+		background: rgba(0,0,0,0.6);
+	}
+	.popup-inner{
+		position: relative;
+		top: 170px;
+		width: 270px;
+		margin: 0 auto;
+		background: #fff;
+		-webkit-border-radius:4px;
+		border-radius:4px;
+		z-index: 2;
+		.popup-content{
+			color: #666;
+			font-size: 16px;
+			text-align: center;
+			height: 109px;
+			line-height: 109px;
+			border-bottom: 1px solid #b2b2b2;
+		}
+		.popup-opt{
+			display: -webkit-box;
+			a{
+				-webkit-box-flex:1;
+				border-right:1px solid #b2b2b2;
+				color: #207af4;
+				height: 43px;
+				line-height: 43px;
+				text-align: center;
+				display: block;
+				&:last-child{
+					border-right:0;
+				}
 			}
 		}
 	}
