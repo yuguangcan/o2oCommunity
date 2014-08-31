@@ -23,10 +23,10 @@
 			<span class="arrow"></span>
 			<select id="type">
 				<option value="0">请选择保修项目</option>
-				<option value="2">2人</option>
-				<option value="3">3人</option>
-				<option value="4">4人</option>
-				<option value="5">5人</option>
+				<option value="2">消防系统</option>
+				<option value="3">电梯系统</option>
+				<option value="4">空调系统</option>
+				<option value="5">供暖系统</option>
 			</select>
 		</div>
 		<div class="m-textarea">

@@ -257,6 +257,9 @@
 		</li>
 	</ul>
 
+	<div class="activity">
+		<img src="/static/community/images/activity.jpg"></img>
+	</div>
 {%/block%}
 
 {%block name="js"%}
